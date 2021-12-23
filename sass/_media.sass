@@ -15,20 +15,37 @@
             font-size: 60px
         &-dscr
             font-size: 24px
+    .product
+        padding: 70px 0
+        &-content
+            padding-top: 40px
+            max-width: 460px
+        &-title
+            font-size: 60px
+            margin-bottom: 25px
+        &-features
+            font-size: 17px
+            margin-bottom: 40px
+        &-dscr
+            font-size: 22px
+            margin-bottom: 60px
+        &-button-wrapper
+            gap: 25px
+        &-button
+            padding: 13px 33px
+            font-size: 17px
 
 @media ( max-width: 1200px)
     .logo
         width: 115px
         height: 55px
-
     .header
         &-nav
             &-link
                 font-size: 16px
         &-consultation-btn
-            padding: 12px 30px
-            width: 119px
-            height: 21px
+            width: 179px
+            height: 45px
             border-radius: 8px
             font-size: 16px
     .banner
@@ -43,12 +60,38 @@
             font-size: 20px
             margin-bottom: 20px
         &-down
-            max-width: 75px
+            width: 75px
             &-img
                 width: 65px
                 margin-bottom: 9px
             &-text
                 font-size: 16px
+    .features
+        &-item
+            flex-basis: 190px
+            padding-top: 90px
+            font-size: 16px
+            background-size: 80px
+    .product
+        padding: 60px 0
+        &-content
+            padding-top: 24px
+            max-width: 380px
+        &-title
+            font-size: 50px
+            margin-bottom: 20px
+        &-features
+            font-size: 16px
+            margin-bottom: 30px
+        &-dscr
+            font-size: 20px
+            margin-bottom: 50px
+        &-button-wrapper
+            gap: 25px
+        &-button
+            border-radius: 8px
+            padding: 12px 30px
+            font-size: 16px
 
 @media ( max-width: 992px)
     .container
@@ -85,9 +128,8 @@
             grid-column: 2
             justify-self: center
         &-consultation-btn
-            padding: 8px 20px
-            width: 104px
-            height: 18px
+            width: 144px
+            height: 34px
             border-radius: 6px
             font-size: 12px
             grid-row: 1
@@ -106,6 +148,28 @@
         &-dscr
             font-size: 16px
             margin-bottom: 20px
+    .features
+        &-item
+            flex-basis: 162px
+            padding-top: 70px
+            font-size: 14px
+            background-size: 60px
+    .product
+        padding: 60px 0
+        &-content
+            max-width: 330px
+        &-title
+            font-size: 40px
+        &-features
+            font-size: 14px
+        &-dscr
+            font-size: 16px
+            margin-bottom: 40px
+        &-button-wrapper
+            gap: 20px
+        &-button
+            padding: 8px 20px
+            font-size: 14px
 
 @media ( max-width: 768px)
     .container
@@ -123,18 +187,33 @@
         &-img
             width: 100%
         &-left
-            margin: 0 10px 20px 0
+            margin: 0 10px 20px 10px
         &-right
             max-width: 80%
             text-align: center
         &-down
-            max-width: 66px
+            width: 66px
             padding-bottom: 20px
             &-img
                 width: 41px
                 margin-bottom: 7px
             &-text
                 font-size: 14px
+    .features
+        &-list
+            flex-wrap: wrap
+            gap: 20px 130px
+            justify-content: center
+    .product
+        padding: 20px 0
+        &-title
+            font-size: 30px
+        &-features
+            margin-bottom: 20px
+        &-dscr
+            margin-bottom: 30px
+        &-button
+            border-radius: 6px
 
 @media ( max-width: 576px)
     .logo
@@ -149,9 +228,8 @@
             &-link
                 font-size: 12px
         &-consultation-btn
-            padding: 5px 14px
-            width: 89px
-            height: 16px
+            width: 117px
+            height: 26px
             border-radius: 6px
     .banner
         &-left
@@ -160,7 +238,7 @@
             max-width: 100%
             text-align: left
         &-down
-            max-width: 66px
+            width: 66px
             &-img
                 width: 41px
                 margin-bottom: 7px
@@ -179,3 +257,39 @@
                 margin-bottom: 6px
             &-text
                 font-size: 12px
+    .features
+        &-list
+            gap: 20px 70px
+        &-item
+            flex-basis: 138px
+            padding-top: 55px
+            font-size: 12px
+            background-size: 50px
+    .product
+        padding: 30px 0 30px 0
+        &:nth-child(even) .product-container, .product-container
+            flex-direction: column-reverse
+        &-content
+            width: 100%
+            max-width: none
+            padding: 0
+        &-img
+            width: 100%
+        &-title
+            font-size: 28px
+        &-features
+            margin-top: 10px
+            font-size: 12px
+        &-dscr
+            font-size: 14px
+            margin: 20px 0 30px 0
+        &-button-wrapper
+            gap: 20px
+        &-button
+            padding: 5px 14px
+            font-size: 12px
+
+@media ( max-width: 383px)
+    .features
+        &-list
+            gap: 20px 0

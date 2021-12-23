@@ -9,8 +9,8 @@ h1, h2
 h1, h2, h3, p
     margin: 0
 
-h2
-    line-height: 110%
+// h2
+//     line-height: 110%
 
 img
     max-width: 100%
@@ -26,6 +26,16 @@ body
     max-width: 1290px
     margin: 0 auto
     padding: 0 50px
+
+.visually-hidden
+    position: absolute
+    clip: rect(1px, 1px, 1px, 1px)
+    padding: 0
+    margin: 0
+    border: none
+    width: 1px
+    height: 1px
+    overflow: hidden
 
 .hide
     display: none
@@ -71,9 +81,9 @@ button
     &-nav
         &-list
             display: flex
-            justify-content: space-between
+            justify-content: space-around
         &-link
-            font-weight: normal
+            font-weight: 400
             font-size: 18px
             line-height: 130%
             letter-spacing: 0.04em
@@ -96,9 +106,8 @@ button
                 color: $main-bg-color
     &-consultation-btn
         justify-self: end
-        padding: 14px 36px
-        width: 136px
-        height: 26px
+        width: 205px
+        height: 50px
         background-color: $trigger-color
         border-radius: 10px
         font-weight: bold
@@ -160,3 +169,103 @@ button
             filter: drop-shadow(4px 7px 20px $second-color)
         &:hover &-text
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+.features
+    background-color: $second-bg-color
+    padding: 40px 0
+    color: $main-color
+    &-list
+        display: flex
+        justify-content: space-between
+    &-item
+        width: 236px
+        height: 161px
+        padding-top: 115px
+        text-align: center
+        font-weight: 700
+        font-size: 18px
+        line-height: 130%
+        letter-spacing: 0.04em
+        background-position: center top
+        background-repeat: no-repeat
+        background-size: 100px
+        &-one
+            background-image: url('../img/icons/icon-1-section-2.svg')
+        &-two
+            background-image: url('../img/icons/icon-2-section-2.svg')
+        &-three
+            background-image: url('../img/icons/icon-3-section-2.svg')
+        &-four
+            background-image: url('../img/icons/icon-4-section-2.svg')
+.product
+    padding: 80px 0
+    background-color: $main-bg-color
+    color: $main-color
+    &:nth-child(3n)
+        background-color: $one-color
+    &:nth-child(3n + 1)
+        background-color: $two-color
+    &:nth-child(3n + 2)
+        background-color: $three-color
+    &-container
+        display: flex
+        justify-content: space-between
+        gap: 20px
+    &:nth-child(even) .product-container
+        flex-direction: row-reverse
+    &-img
+        width: calc( 50% )
+        border-radius: 16px
+        object-fit: cover
+    &-content
+        padding-top: 56px
+        max-width: 500px
+    &-title
+        margin-bottom: 30px
+        font-weight: 700
+        font-size: 70px
+        line-height: 110%
+        letter-spacing: 0.01em
+    &-features
+        margin-bottom: 50px
+        font-weight: 400
+        font-size: 18px
+        line-height: 130%
+        letter-spacing: 0.04em
+    &-dscr
+        margin-bottom: 70px
+        font-weight: 400
+        font-size: 24px
+        line-height: 140%
+        letter-spacing: 0.04em
+    &-button-wrapper
+        display: flex
+        align-items: center
+        gap: 36px
+    &-button
+        display: block
+        padding: 14px 36px
+        border: 2px solid transparent
+        border-radius: 10px
+        font-weight: 700
+        font-size: 18px
+        line-height: 130%
+        letter-spacing: 0.04em
+        color: $main-color
+        &:hover
+            background-color: $main-color
+            color: $main-bg-color
+            border-color: $main-color
+        &:active
+            background-color: $second-bg-color
+            color: $main-color
+            border-color: $second-bg-color
+        &-order
+            background-color: $second-bg-color
+            &:focus
+                outline: 2px solid $second-color
+                // border-color: transparent
+        &-more
+            border-color: $second-bg-color
+            &:focus
+                border-color: $main-color
