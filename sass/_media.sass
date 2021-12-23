@@ -34,6 +34,14 @@
         &-button
             padding: 13px 33px
             font-size: 17px
+    .payment
+        &-title
+            font-size: 55px
+    .option-pay
+        &-title
+            font-size: 22px
+        &-dscr
+            font-size: 17px
 
 @media ( max-width: 1200px)
     .logo
@@ -92,7 +100,36 @@
             border-radius: 8px
             padding: 12px 30px
             font-size: 16px
-
+    .payment
+        padding: 40px 0 50px 0
+        &-title
+            font-size: 50px
+        &-list
+            gap: 20px
+        &-item
+            flex-basis: calc((100% / 3) - (40px / 3))
+    .option-pay
+        &-img-wrapper
+            padding: 25px
+            min-height: 106px
+            margin-bottom: 15px
+        &-title
+            font-size: 20px
+        &-dscr
+            font-size: 16px
+    .footer
+        padding: 57px 0
+        font-size: 16px
+        &-container
+            gap: 50px 20px
+            grid-template-columns: repeat(3, 1fr)
+        &-contacts
+            font-size: 20px
+        &-item:not(:last-child)
+            margin-bottom: 15px
+        &-link-social
+            width: 30px
+            height: 30px
 @media ( max-width: 992px)
     .container
         padding: 0 39px
@@ -170,10 +207,35 @@
         &-button
             padding: 8px 20px
             font-size: 14px
+    .payment
+        &-title
+            font-size: 40px
+        &-list
+            gap: 34px
+        &-item
+            flex-basis: calc((100% / 3) - (68px / 3))
+    .option-pay
+        &-img-wrapper
+            max-height: 73px
+        &-title
+            font-size: 16px
+        &-dscr
+            font-size: 14px
+    .footer
+        font-size: 14px
+        &-container
+            gap: 40px 15px
+        &-contacts
+            font-size: 16px
+        &-item:not(:last-child)
+            margin-bottom: 10px
+        &-link-social
+            width: 26px
+            height: 26px
 
 @media ( max-width: 768px)
     .container
-        padding: 0 10px
+        padding: 0 20px
     .header
         &-nav
             &-list
@@ -183,11 +245,12 @@
                 flex-basis: calc(50% - 6px)
     .banner
         &-container
+            padding: 0
             flex-direction: column
         &-img
             width: 100%
         &-left
-            margin: 0 10px 20px 10px
+            margin: 0 0 20px 0
         &-right
             max-width: 80%
             text-align: center
@@ -214,8 +277,33 @@
             margin-bottom: 30px
         &-button
             border-radius: 6px
+    .payment
+        padding: 30px 0 30px 0
+        &-title
+            font-size: 30px
+        &-list
+            flex-direction: column
+            align-items: center
+        &-item
+            flex-basis: auto
+            width: 65%
+    .option-pay
+        &-img-wrapper
+            min-height: 73px
+            padding: 18px
+        &-title
+            margin-bottom: 10px
+    .footer
+        padding: 57px 0 40px 0
+        &-container
+            grid-template-columns: repeat(2, 1fr)
+            gap: 40px
+        &-logo &-list-social
+            order: -1
 
 @media ( max-width: 576px)
+    .container
+        padding: 0 10px
     .logo
         width: 73px
         height: 35px
@@ -288,6 +376,31 @@
         &-button
             padding: 5px 14px
             font-size: 12px
+    .payment
+        &-title
+            font-size: 28px
+    .option-pay
+        &-img-wrapper
+            margin-bottom: 10px
+        &-title
+            font-size: 14px
+        &-dscr
+            font-size: 12px
+    .footer
+        padding: 30px 0
+        font-size: 12px
+        &-container
+            grid-template-columns: 1fr
+            gap: 30px
+        &-contacts
+            font-size: 14px
+        &-item:not(:last-child)
+            margin-bottom: 10px
+        &-link-social
+            width: 26px
+            height: 26px
+        &-contacts &-rules-list
+            order: -1
 
 @media ( max-width: 383px)
     .features

@@ -21,6 +21,7 @@ body
     font-size: 18px
     line-height: 130%
     letter-spacing: 0.04em
+    color: $main-color
 
 .container
     max-width: 1290px
@@ -62,12 +63,6 @@ button
     width: 164px
     height: 76px
     color: $one-color
-
-.payment-logo
-    color: $one-color
-
-.footer-logo
-    color: $main-color
 
 .header
     color: $second-color
@@ -190,13 +185,13 @@ button
         background-repeat: no-repeat
         background-size: 100px
         &-one
-            background-image: url('../img/icons/icon-1-section-2.svg')
+            background-image: url('../img/icons/features-icon-1.svg')
         &-two
-            background-image: url('../img/icons/icon-2-section-2.svg')
+            background-image: url('../img/icons/features-icon-2.svg')
         &-three
-            background-image: url('../img/icons/icon-3-section-2.svg')
+            background-image: url('../img/icons/features-icon-3.svg')
         &-four
-            background-image: url('../img/icons/icon-4-section-2.svg')
+            background-image: url('../img/icons/features-icon-4.svg')
 .product
     padding: 80px 0
     background-color: $main-bg-color
@@ -269,3 +264,72 @@ button
             border-color: $second-bg-color
             &:focus
                 border-color: $main-color
+.payment
+    padding: 60px 0 80px 0
+    color: $main-color
+    background-color: $second-bg-color
+    &-title
+        margin-bottom: 48px
+        font-weight: 700
+        font-size: 70px
+        line-height: 110%
+        letter-spacing: 0.01em
+    &-list
+        display: flex
+        justify-content: space-between
+        gap: 30px
+    &-item
+        flex-basis: calc((100% / 3) - (60px / 3))
+.option-pay
+    &-img-wrapper
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 35px
+        margin-bottom: 20px
+        background-color: $main-color
+        min-height: 146px
+        color: $main-color
+    &-title
+        margin-bottom: 15px
+        font-weight: 400
+        font-size: 24px
+        line-height: 140%
+        letter-spacing: 0.04em
+    &-dscr
+        font-weight: 400
+        font-size: 18px
+        line-height: 130%
+        letter-spacing: 0.04em
+.footer
+    background-color: $second-color
+    color: $main-color
+    padding: 80px 0 100px 0
+    font-size: 18px
+    line-height: 130%
+    letter-spacing: 0.04em
+    &-container
+        display: grid
+        grid-template-columns: 4fr 5fr 3fr
+        gap: 68px 30px
+    &-contacts
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        font-size: 24px
+        line-height: 140%
+        letter-spacing: 0.04em
+    &-item:not(:last-child)
+        margin-bottom: 20px
+    &-link
+        transition: color .3s easy-in-out
+        &:hover
+            color: $second-bg-color
+    &-list-social
+        display: flex
+    &-item-social:not(:last-child)
+        margin-right: 20px
+    &-link-social
+        display: block
+        width: 40px
+        height: 40px
