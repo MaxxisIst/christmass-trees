@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../fonts/cormorant-v11-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/burger.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -18,12 +19,20 @@
             <button class="burger header-burger">
                 <span class="burger-line"></span>
             </button>
-            <nav class="nav header-nav header-nav_active">
+            <nav class="nav header-nav">
                 <ul class="header-nav-list">
-                    <li class="header-nav-item"><a href="#" class="header-nav-link">Пихта Фразера</a></li>
-                    <li class="header-nav-item"><a href="#" class="header-nav-link">Русская ель</a></li>
-                    <li class="header-nav-item"><a href="#" class="header-nav-link">Сибирская пихта</a></li>
-                    <li class="header-nav-item"><a href="#" class="header-nav-link">Как оплатить?</a></li>
+                    <li class="header-nav-item">
+                        <a href="#one" class="header-nav-link">Пихта Фразера</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#two" class="header-nav-link">Русская ель</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#three" class="header-nav-link">Сибирская пихта</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#payment" class="header-nav-link">Как оплатить?</a>
+                    </li>
                 </ul>
             </nav>
             <button class="header-consultation-btn">
@@ -112,7 +121,7 @@
                 <img class="product-img" src="img/product-3.jpg" width="630" height="590" alt="Сибирская пихта">
             </div>
         </section>
-        <section class="payment">
+        <section class="payment" id="payment">
             <div class="container payment-container">
                 <h2 class="payment-title">Как можно оплатить</h2> 
                 <ul class="payment-list">
