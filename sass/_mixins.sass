@@ -7,3 +7,16 @@
 =burger-line
     height: 2px
     background-color: $main-bg-color
+=btns-effect-1
+    border: none
+    box-shadow: 0px 2px 6px transparent
+    transition-property: background-color, box-shadow
+    transition-duration: .3s
+    transition-timing-function: easy-in-out
+    &:hover
+        background-color: $main-bg-color
+    &:active
+        background-color: $main-bg-color
+        box-shadow: 0px 2px 6px rgba(2, 67, 52, 0.36)
+    &:focus
+        outline-color: $second-color
