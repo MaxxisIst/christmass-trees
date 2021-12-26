@@ -203,18 +203,7 @@ button
         font-size: 18px
         line-height: 130%
         color: $main-color
-        border: none
-        box-shadow: 0px 2px 6px transparent
-        transition-property: background-color, box-shadow
-        transition-duration: .3s
-        transition-timing-function: easy-in-out
-        &:hover
-            background-color: $main-bg-color
-        &:active
-            background-color: $main-bg-color
-            box-shadow: 0px 2px 6px rgba(2, 67, 52, 0.36)
-        &:focus
-            outline-color: $second-color
+        +btns-effect-1
 
 .banner
     background-color: $main-bg-color
@@ -233,12 +222,12 @@ button
         font-size: 70px
         line-height: 100%
         letter-spacing: 0.01em
-        margin-bottom: 50px
+        margin: 0 0 50px 0
     &-dscr
         font-size: 26px
         line-height: 140%
         letter-spacing: 0.04em
-        margin-bottom: 24px
+        margin: 0 0 24px 0
     &-down
         display: flex
         max-width: 113px
@@ -424,5 +413,3 @@ button
     font-size: 18px
     line-height: 130%
     letter-spacing: 0.04em
-    &-text
-        margin: 0

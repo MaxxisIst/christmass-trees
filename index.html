@@ -12,13 +12,16 @@
     <script src="js/modal.js" defer></script>
     <script src="js/timer.js" defer></script>
     <!-- <script src="js/ball.js" defer></script> -->
+    
 </head>
 <body>
     <header class="header">
         <div class="container header-container">
-            <svg class="header-logo logo" viewBox="0 0 164 76" role="img" aria-label="Логотип компании Christmas Tree's">
-                <use xlink:href="#logo" />
-            </svg>
+            <a href="https://maxxisist.github.io" title="Christmas Tree's" rel="noopener noreferer">
+                <svg class="header-logo logo" viewBox="0 0 164 76" role="img" aria-label="Логотип компании Christmas Tree's">
+                    <use xlink:href="#logo" />
+                </svg>
+            </a>
             <button class="burger header-burger">
                 <span class="burger-line"></span>
             </button>
@@ -140,9 +143,11 @@
                     <li class="payment-item">
                         <article class="payment-option-pay option-pay">
                             <div class="option-pay-img-wrapper">
-                                <svg class="logo option-pay-img" viewBox="0 0 164 76">
-                                    <use xlink:href="#logo" />
-                                </svg>
+                                <a href="https://maxxisist.github.io" title="Christmas Tree's" rel="noopener noreferer">
+                                    <svg class="logo option-pay-img" viewBox="0 0 164 76">
+                                        <use xlink:href="#logo" />
+                                    </svg>
+                                </a>
                             </div>
                             <h3 class="option-pay-title">Беспроцентная рассрочка от&nbsp;нас</h3>
                             <p class="option-pay-dscr">Мы делим платеж на 2 части. Первую часть вы оплачиваете сразу, вторую через 15 дней после получения дерева</p>
@@ -163,9 +168,11 @@
     </main>
     <footer class="footer">
         <div class="container footer-container">
-            <svg class="logo footer-logo logo-second" viewBox="0 0 164 76">
-                <use xlink:href="#logo" />
-            </svg>
+            <a href="https://maxxisist.github.io" title="Christmas Tree's" rel="noopener noreferer">
+                <svg class="logo footer-logo logo-second" viewBox="0 0 164 76">
+                    <use xlink:href="#logo" />
+                </svg>
+            </a>
             <address class="footer-contacts">
                 <a class="footer-item footer-link" href="tel:+89479309294">8 (947) 930 92-94</a>
                 <a class="footer-item footer-link" href="mailto:christmas_trees@gmail.com">Сhristmas_Trees@gmail.com</a>
@@ -221,11 +228,11 @@
             <form class="modal-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
                 <label class="modal-label">
                     <span class="modal-label-text">ФИО</span>
-                    <input class="modal-input" required name="bio" type="text" placeholder="Введите ваше ФИО">
+                    <input class="modal-input" title="bio" type="text" placeholder="Введите ваше ФИО" required>
                 </label>
                 <label class="modal-label modal-label-last">
                     <span class="modal-label-text">Телефон</span>
-                    <input class="modal-input" required name="tel" type="tel" placeholder="Введите ваш номер телефона">
+                    <input class="modal-input" title="tel" type="tel" placeholder="Введите ваш номер телефона" required>
                 </label>
                 <input class="modal-order" type="hidden" name="order">
                 <button class="modal-button">Заказать звонок</button>
