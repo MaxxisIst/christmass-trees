@@ -20,3 +20,42 @@
         box-shadow: 0px 2px 6px rgba(2, 67, 52, 0.36)
     &:focus
         outline-color: $second-color
+=nav-links-effect
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 2px
+        background-color: $main-bg-color
+        transition-duration: 0.4s
+        transition-property: transform
+        transform: scaleX(0)
+    &:hover::before
+        transform: scaleX(1)
+    &:hover
+        color: $main-bg-color
+=btns-effect-2
+    &:hover
+        background-color: $main-color
+        color: $main-bg-color
+        border-color: $main-color
+    &:active
+        background-color: $second-bg-color
+        color: $main-color
+        border-color: $second-bg-color
+    &-order
+        background-color: $second-bg-color
+        &:focus
+            outline: 2px solid $second-color
+            border-color: transparent
+    &-more
+        border-color: $second-bg-color
+        &:focus
+            border-color: $main-color
+=footer-links-effect
+    transition: color .3s easy-in-out
+    &:hover
+        color: $second-bg-color
