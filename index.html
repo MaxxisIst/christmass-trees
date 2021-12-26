@@ -225,14 +225,15 @@
                 </svg>
             </button>
             <h2 class="modal-title">Оформить заказ</h2>
+            <h2 class="modal-title-consult">Получить консультацию</h2>
             <form class="modal-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
                 <label class="modal-label">
                     <span class="modal-label-text">ФИО</span>
-                    <input class="modal-input" title="bio" type="text" placeholder="Введите ваше ФИО" required>
+                    <input type="text" title="bio" placeholder="Введите ваше ФИО" required class="modal-input">
                 </label>
                 <label class="modal-label modal-label-last">
                     <span class="modal-label-text">Телефон</span>
-                    <input class="modal-input" title="tel" type="tel" placeholder="Введите ваш номер телефона" required>
+                    <input type="tel" title="tel" placeholder="Введите ваш номер телефона" required class="modal-input">
                 </label>
                 <input class="modal-order" type="hidden" name="order">
                 <button class="modal-button">Заказать звонок</button>

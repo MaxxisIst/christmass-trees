@@ -29,97 +29,6 @@ body
 .hide
     display: none
 
-.overlay
-    position: fixed
-    top: 0
-    bottom: 0
-    right: 0
-    left: 0
-    z-index: 100
-    background-color: rgba(0, 0, 0, .5)
-    align-items: center
-    justify-content: center
-    padding: 10px
-    overflow-y: auto
-    display: none
-    &_active
-        display: flex
-
-.modal
-    position: relative
-    background-color: $main-color
-    color: $second-color
-    max-width: 950px
-    border: 1px solid $second-color
-    border-radius: 14px
-    padding: 60px 85px
-    width: 100%
-    &-title
-        color: $two-color
-        font-family: Arial
-        font-weight: 700
-        font-size: 26px
-        line-height: 140%
-        text-align: center
-        letter-spacing: 0.04em
-        margin-bottom: 50px
-    &-close
-        position: absolute
-        display: flex
-        align-items: center
-        justify-content: center
-        right: 20px
-        top: 20px
-        background-color: transparent
-        border: none
-        color: $two-color
-        transition: color .3s easy-in
-        &:hover
-            color: $second-color
-        &:focus
-            color: $second-color
-            outline: 1px solid $second-color
-        &:active
-            color: $second-bg-color
-    &-form
-        display: flex
-        flex-direction: column
-    &-label
-        display: block
-        position: relative
-        &-text
-            position: absolute
-            top: 12px
-            left: 15px
-            color: $second-color
-            font-weight: bold
-            font-size: 18px
-            line-height: 130%
-            letter-spacing: 0.04em
-        &-last
-            margin-bottom: 60px
-    &-input
-        width: 100%
-        font-size: 18px
-        line-height: 130%
-        letter-spacing: 0.04em
-        padding: 45px 15px 31px 15px
-        border: 1px solid $second-bg-color
-        box-sizing: border-box
-        border-radius: 12px
-        margin-bottom: 20px
-    &-button
-        padding: 14px 36px
-        background: $trigger-color
-        border-radius: 10px
-        font-weight: 700
-        font-size: 18px
-        line-height: 130%
-        letter-spacing: 0.04em
-        color: $main-color
-        align-self: flex-end
-        +btns-effect-1
-
 .burger
     display: none
     position: relative
@@ -369,6 +278,7 @@ button
         font-size: 18px
         line-height: 130%
         letter-spacing: 0.04em
+
 .footer
     background-color: $second-color
     color: $main-color
@@ -399,6 +309,113 @@ button
         display: block
         width: 40px
         height: 40px
+
+.overlay
+    position: fixed
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    z-index: 100
+    background-color: rgba(0, 0, 0, .5)
+    align-items: center
+    justify-content: center
+    padding: 10px
+    overflow-y: auto
+    display: none
+    &_active
+        display: flex
+
+.modal
+    position: relative
+    background-color: $main-color
+    color: $second-color
+    max-width: 950px
+    border: 1px solid $second-color
+    border-radius: 14px
+    padding: 60px 85px
+    width: 100%
+    &-title
+        display: none
+        color: $two-color
+        font-family: Arial
+        font-weight: 700
+        font-size: 26px
+        line-height: 140%
+        text-align: center
+        letter-spacing: 0.04em
+        margin-bottom: 50px
+        &_active
+            display: flex
+        &-consult
+            display: none
+            color: $two-color
+            font-family: Arial
+            font-weight: 700
+            font-size: 26px
+            line-height: 140%
+            text-align: center
+            letter-spacing: 0.04em
+            margin-bottom: 50px
+            &_active
+                display: flex
+    &-close
+        position: absolute
+        display: flex
+        align-items: center
+        justify-content: center
+        right: 20px
+        top: 20px
+        background-color: transparent
+        border: none
+        color: $two-color
+        transition: color .3s easy-in
+        &:hover
+            color: $second-color
+        &:focus
+            color: $second-color
+            outline: 1px solid $second-color
+        &:active
+            color: $second-bg-color
+    &-form
+        display: flex
+        flex-direction: column
+    &-label
+        display: block
+        position: relative
+        &-text
+            position: absolute
+            top: 12px
+            left: 15px
+            color: $second-color
+            font-weight: bold
+            font-size: 18px
+            line-height: 130%
+            letter-spacing: 0.04em
+        &-last
+            margin-bottom: 60px
+    &-input
+        width: 100%
+        font-size: 18px
+        line-height: 130%
+        letter-spacing: 0.04em
+        padding: 45px 15px 31px 15px
+        border: 1px solid $second-bg-color
+        box-sizing: border-box
+        border-radius: 12px
+        margin-bottom: 20px
+    &-button
+        padding: 14px 36px
+        background: $trigger-color
+        border-radius: 10px
+        font-weight: 700
+        font-size: 18px
+        line-height: 130%
+        letter-spacing: 0.04em
+        color: $main-color
+        align-self: flex-end
+        +btns-effect-1
+
 .timer
     position: sticky
     z-index: 10
