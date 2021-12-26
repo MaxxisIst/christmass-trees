@@ -332,8 +332,18 @@
         &-container
             grid-template-columns: repeat(2, 1fr)
             gap: 40px
-        &-logo, &-list-social
-            order: -1
+        &-logo
+            order: 0
+        &-contacts
+            order: 2
+        &-list-social
+            order: 1
+        &-info-list
+            order: 3
+        &-rules-list
+            order: 4
+        &-team-list
+            order: 5
     .modal
         padding: 30px 15px
         max-width: 300px
@@ -455,13 +465,22 @@
             gap: 30px
         &-contacts
             font-size: 14px
+            order: 1
         &-item:not(:last-child)
             margin-bottom: 10px
         &-link-social
             width: 26px
             height: 26px
-        &-contacts, &-rules-list
-            order: -1
+        &-logo
+            order: 0
+        &-list-social
+            order: 2
+        &-info-list
+            order: 4
+        &-rules-list
+            order: 3
+        &-team-list
+            order: 5
 
 @media ( max-width: 383px)
     .features
